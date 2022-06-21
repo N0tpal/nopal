@@ -4,14 +4,14 @@ include "function.php";
 echo color("green","              MNOVALRIZKY\n");
 echo color("yellow","        AUTO REGIST & CLAIM VOUCHER\n" );
 echo color("red","          ".hari_ini().date('m-Y H:i:s') ." \n\n ");
-echo color("white","            Format Nomor 628***\n");
+echo color("blue","            Format Nomor 628***\n");
 sleep(1);
 echo color("white","  ");
 function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         ulang:
-        echo color("white","\n NOMOR : ");
+        echo color("red","\n NOMOR : ");
         $no = trim(fgets(STDIN));
         $data = '{"email":"'.$email.'@gmail.com","name":"nopal rizky","phone":"+'.$no.'","signed_up_country":"ID"}';
         $register = request("/v5/customers", null, $data);
@@ -19,7 +19,7 @@ function change(){
         $otptoken = getStr('"otp_token":"','"',$register);
         echo color("green"," Kode otp sudah di kirim!")."\n";
         otp:
-        echo color("white"," OTP : ");
+        echo color("green"," OTP : ");
         sleep(2);
         $otp = trim(fgets(STDIN));
         $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"83415d06-ec4e-11e6-a41b-6c40088ab51e"}';
