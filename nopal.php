@@ -50,7 +50,7 @@ function change(){
                 sleep(1);
                 echo "\n".color("red"," [x1] DISKON GO-FOOD 50%!");
                 echo "\n\n".color("yellow","              @mnovalrizky      ");
-                echo "\n".color("gray","      Silahkan Masuk ke VMOS/AppClone");
+                echo "\n".color("purple","      Silahkan Masuk ke VMOS/AppClone");
                 for($a=1;$a<=3;$a++){
                         echo color("white",".");
                         sleep(2);
