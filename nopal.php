@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("pink","              MNOVALRIZKY\n");
+echo color("green","              MNOVALRIZKY\n");
 echo color("yellow","        AUTO REGIST & CLAIM VOUCHER\n" );
 echo color("red","          ".hari_ini().date('m-Y H:i:s') ." \n\n ");
 echo color("white","            Format Nomor 628***\n");
@@ -30,7 +30,7 @@ function change(){
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo "\n".color("yellow"," Akses Token : ".$token."\n\n");
         save("token.txt",$token);
-        echo "\n".color("pink"," Claim Voucher? y/n : ");
+        echo "\n".color("green"," Claim Voucher? y/n : ");
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
                 //kamu kena preng wkwkwk cuman echo doang bukan claim voc beneran//
