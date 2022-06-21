@@ -34,8 +34,8 @@ function change(){
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
                 //kamu kena preng wkwkwk cuman echo doang bukan claim voc beneran//
-                echo "\n".color("white","           Lagi Claim Voucher!       \n");
-                echo color("white","            (Total 8 Voucher)       \n");
+                echo "\n".color("yellow","           Lagi Claim Voucher!       \n");
+                echo color("blue","            (Total 8 Voucher)       \n");
                 echo "\n".color("green"," [x1] Voucher Diskon GoSend 50%");
                 sleep(1);
                 echo "\n".color("red"," [x1] Diskon GoFood 50%");
@@ -49,8 +49,8 @@ function change(){
                 echo "\n".color("blue"," [x1] DISKON 50% GoCar pake GoPay maks. Rp30.000");
                 sleep(1);
                 echo "\n".color("red"," [x1] DISKON GO-FOOD 50%!");
-                echo "\n\n".color("blue","              @mnovalrizky      ");
-                echo "\n".color("white","      Silahkan Masuk ke VMOS/AppClone");
+                echo "\n\n".color("yellow","              @mnovalrizky      ");
+                echo "\n".color("gray","      Silahkan Masuk ke VMOS/AppClone");
                 for($a=1;$a<=3;$a++){
                         echo color("white",".");
                         sleep(2);
