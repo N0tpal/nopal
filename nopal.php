@@ -4,7 +4,7 @@ include "function.php";
 echo color("green","              MNOVALRIZKY\n");
 echo color("yellow","        AUTO REGIST & CLAIM VOUCHER\n" );
 echo color("red","          ".hari_ini().date('m-Y H:i:s') ." \n\n ");
-echo color("blue","            Format Nomor 628***\n");
+echo color("nevy","            Format Nomor 628***\n");
 sleep(1);
 echo color("white","  ");
 function change(){
@@ -44,9 +44,9 @@ function change(){
                 sleep(1);
                 echo "\n".color("green"," [x1] DISKON 50% GoCar maks. Rp25.000");
                 sleep(1);
-                echo "\n".color("blue"," [x1] DISKON 50% GoRide pake GoPay maks. Rp10.000");
+                echo "\n".color("nevy"," [x1] DISKON 50% GoRide pake GoPay maks. Rp10.000");
                 sleep(1);
-                echo "\n".color("blue"," [x1] DISKON 50% GoCar pake GoPay maks. Rp30.000");
+                echo "\n".color("nevy"," [x1] DISKON 50% GoCar pake GoPay maks. Rp30.000");
                 sleep(1);
                 echo "\n".color("red"," [x1] DISKON GO-FOOD 50%!");
                 echo "\n\n".color("yellow","              @mnovalrizky      ");
@@ -107,12 +107,12 @@ function change(){
         $expired5 = getStr1('"expiry_date":"','"',$cekvoucher,'5');
         $expired6 = getStr1('"expiry_date":"','"',$cekvoucher,'6');
          setpin:
-         echo "\n".color("nevy","?] Mau set pin?: y/n ");
+         echo "\n".color("blue","?] Mau set pin?: y/n ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("red","========( PIN ANDA = 112233 )========")."\n";
-         $data2 = '{"pin":"112233"}';
+         echo color("red","========( PIN ANDA = 081360 )========")."\n";
+         $data2 = '{"pin":"081360"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp set pin: ";
          $otpsetpin = trim(fgets(STDIN));
